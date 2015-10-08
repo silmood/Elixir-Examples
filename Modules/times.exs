@@ -1,4 +1,3 @@
-
 #Las estructuras que agrupan funciones en elixir son llamados modulos
 #Los .exs son scripts que podemos ejecutar a través del shell
 #Para cargar un script en el shell ejecutamos 'iex script.exs'
