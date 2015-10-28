@@ -1,5 +1,4 @@
-#El operador capture (&) tiene una manera más rápida de crear funciones cortas a través
-#del operador capture
+#El operador capture (&) tiene una manera más rápida de crear funciones anonimas
 
 big_sum = fn x,y -> x + y end
 
