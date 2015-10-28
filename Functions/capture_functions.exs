@@ -19,3 +19,13 @@ mrs_prefix = base_prefix.("Mrs.")
 
 IO.puts mr_prefix.("Potato")
 IO.puts mrs_prefix.("Potato")
+
+#Si usamos los operadores '{}' o '[]' podemos convertir el cuerpo de una función
+#englobada por el operador capture a un mapa o una lista
+#En este caso crearemos una función para permutar tres numeros y que devuelva sus
+#posibles combinaciones en una lista
+
+permutation = &[[&1, &2, &3] , [&1, &3, &2], [&2, &1, &3], [&2, &3, &1], [&3, &2, &1], [&3, &1, &2]]
+
+IO.inspect permutation.(4, 5, 6)
+
