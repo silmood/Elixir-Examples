@@ -10,7 +10,8 @@ a = 2
 
 #5 = a
 
-#Si la expresión anterior fuera ejecutada obtendriamos un MatchError, esto se debe a que# ya habiamos afirmado que la variable 'a' es igual a 2 . 5 no hace match con 'a'
+#Si la expresión anterior fuera ejecutada obtendriamos un MatchError, esto se debe a que
+# ya habiamos afirmado que la variable 'a' es igual a 2 . 5 no hace match con 'a'
 #Llevemos al pattern matching a otro nivel
 
 [x, y, z] = [10, 11, 12]
