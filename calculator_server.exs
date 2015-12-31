@@ -9,10 +9,10 @@ defmodule CalculatorServer do
   def loop(value) do
     new_value = receive do
       :get_value -> IO.inspect value
-      {:add, x} -> value + x
-      {:sub, x} -> value - x
-      {:mul, x} -> value * x
-      {:div, x} -> value / x
+      {:add, x} -> do_add(value, x)
+      {:sub, x} -> do_sub(value, x)
+      {:mul, x} -> do_mul(value, x)
+      {:div, x} -> do_div(value, x)
     end
     loop(new_value)
   end
@@ -35,6 +35,22 @@ defmodule CalculatorServer do
 
   def div(server_pid, x) do
     send(server_pid, {:div, x})
+  end
+
+  defp do_add(x, y) do
+    x + y
+  end
+
+  defp do_sub(x, y) do
+    x - y
+  end
+
+  defp do_mul(x, y) do
+    x * y
+  end
+
+  defp do_div(x, y) do
+    x / y
   end
 
 end
