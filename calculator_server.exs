@@ -1,7 +1,13 @@
 defmodule CalculatorServer do
+
   def start do
     spawn(fn ->
-      value = 0
+      loop(0)
+    end)
+  end
+
+  def start(value) do
+    spawn(fn ->
       loop(value)
     end)
   end
